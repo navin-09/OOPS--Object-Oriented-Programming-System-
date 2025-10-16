@@ -54,6 +54,29 @@ this repo consists of Concepts of OOPS.
 | Inheritance with parameterized parent constructor only | ❌ No                                   | Must explicitly call `super(args)`      |
 
 
+# Abstract Classes
+
+    An abstract class is a class that cannot be instantiated (you can’t create objects from it directly).
+    It is used to provide a base structure or partial implementation that other classes can inherit and complete.
+
+# The static Keyword
+
+    The static keyword means the member belongs to the class, not to any object.
+        ->  Saves memory (shared variable)
+        ->  Utility methods (e.g., Math.sqrt())
+        ->  Class-level behavior (not per object)
+        ->  Used in Singleton & Factory patterns
+
+# The final Keyword
+
+    The final keyword is used to restrict modification. It can be applied to variables, methods, or classes.
+    | **Applied To**   | **Effect**                  | **Use Case**                         |
+    | ---------------- | --------------------------- | ------------------------------------ |
+    | `final` variable | Value cannot change         | Constants                            |
+    | `final` method   | Method cannot be overridden | Preserve logic                       |
+    | `final` class    | Class cannot be extended    | Immutable classes (`String`, `Math`) |
+
+
 # Inheritance
 
 | **Member Type**             | **Inherited?** | **Notes**                                         |
@@ -117,3 +140,24 @@ In Java, polymorphism allows one object reference (usually of a parent type) to 
 | **Inheritance** | Single                               | Multiple allowed                     |
 | **Use Case**    | When classes share behavior + state  | When classes share behavior only     |
 | **Keyword**     | `extends`                            | `implements`                         |
+
+
+# Encapsulation
+    Encapsulation means bundling data and methods into a single unit (class)
+    and restricting direct access to that data using access modifiers (private, public).
+
+| **Concept**       | **Meaning**                            |
+| ----------------- | -------------------------------------- |
+| Hide data         | Using `private` variables              |
+| Controlled access | Using `public` getters/setters         |
+| Benefits          | Security, maintainability, flexibility |
+
+# Abstraction
+
+    Abstraction means showing only essential details and hiding the internal logic of how things work.
+
+| **Concept**            | **Meaning**                            |
+| ---------------------- | -------------------------------------- |
+| Focus on what, not how | Hides implementation details           |
+| Achieved by            | Abstract classes or Interfaces         |
+| Benefits               | Simplifies code, increases flexibility |
